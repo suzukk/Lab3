@@ -1258,3 +1258,16 @@ default ↓ [ 100% ] 20 VUs  2m0s
 running (2m01.3s), 00/20 VUs, 1909 complete and 0 interrupted iterations
 default ✓ [ 100% ] 20 VUs  2m0s
 time="2026-09-22T17:57:16+08:00" level=error msg="thresholds on metrics 'checks, http_req_failed{name:pay}' have been crossed"
+
+Availability calculation:
+Successful requests = 4808
+Total requests = 5727
+Availability = 4808 / 5727 × 100 = 83.95%
+
+Availability SLO: >90%
+Result: FAIL
+
+Reliability:
+Pay error rate = 19.43%
+Reliability SLO: <8%
+Result: FAIL
